@@ -17,7 +17,7 @@ console.log(typeof bool)
 // Alt+shift+down=copy
 // Alt+up=take the line up
 
-// tofix command= tofixed command deterines how many decimal number is wanted
+// tofixed command= tofixed command determines how many decimal number is wanted
 // the drawbacks of tofixed is that it converts the number into string
 var first =0.28
 var second=0.9
