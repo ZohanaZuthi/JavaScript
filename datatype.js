@@ -20,3 +20,7 @@ console.log(str)
 // purpose of isNan=if a value is NaN (Not-a-Number). It returns true
 
 console.log(isNaN(str))
+
+// condition in javascript
+console.log(10=='10') // double equal checks if the values are same
+console.log(10==='10') //triple equal checks if the value and also the datatype are same or not
