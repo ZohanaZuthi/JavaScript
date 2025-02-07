@@ -1,5 +1,29 @@
 //  conversion of datatype
+// daatypes-integer,string,undefined,object ,boolean,Null,bigint,Symbol
+var number=15
+var str="This is a string"
+var bol=true
+var bin=BigInt("23")
+console.log(bin)
+let n=null
+let y=Symbol("Hello")
+console.log(y)
+var und;
+const obj={
+    // key:value
+    name:"Sharddha",
+    age: 35,
+    followers:17000
 
+}
+console.log(obj)
+// when you are adding some integer values with string the integer will add as a string
+obj.name+=123
+console.log(obj)
+// in case of const we can change the key of the object
+obj.name="shusmita"
+console.log(obj.age)
+console.log(obj["name"])
 // float to integer- parseInt
 var num=5.5
 num=parseInt(num)
