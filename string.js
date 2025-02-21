@@ -18,3 +18,4 @@ console.log(output)
 // Escape character \n,\t
 console.log("I had fun \nlearning")
 console.log("I had fun \tlearning")
+// string is immutable
