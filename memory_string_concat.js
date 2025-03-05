@@ -14,6 +14,9 @@ console.log(`Hello My name is ${name}. My age is ${age}`)
 
 const gameName= new String('hiteshch')
 console.log(gameName[0])
+console.log(gameName.__proto__)
+console.log(gameName.toUpperCase())
+// a copy of gameName is changed not the main one
 console.log(gameName.charAt(3))
 console.log(gameName.indexOf('e'))
 
