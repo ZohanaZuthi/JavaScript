@@ -13,6 +13,7 @@ const obj={
     // key:value
     name:"Sharddha",
     age: 35,
+    
     followers:17000
 
 }
