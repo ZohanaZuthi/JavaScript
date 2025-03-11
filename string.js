@@ -19,3 +19,9 @@ console.log(output)
 console.log("I had fun \nlearning")
 console.log("I had fun \tlearning")
 // string is immutable
+let str1="  hitesh  "
+console.log(str1.trim())
+
+const url="https://hitesh.com/hitesh%20chaudhury"
+console.log(url.replace('%20',' '))
+
