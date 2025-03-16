@@ -26,3 +26,8 @@ console.log(JsUser["full name"])
 // how to use symbol as a key
 console.log(JsUser[sym])
 console.log(typeof(sym))
+
+// to stop anyone from making update to my object we can freeze it
+Object.freeze(JsUser)
+JsUser.email="statrack613@gmail.com"
+console.log(JsUser.email)
