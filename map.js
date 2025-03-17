@@ -33,3 +33,16 @@ const fruits = ['apple', 'banana', 'cherry'];
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
+
+fruits.forEach(function (item){console.log(`${item}`);
+})
+
+// arrow function
+fruits.forEach((item)=>{console.log(`${item}`);
+})
+
+function print(item){console.log(`${item}`)}
+fruits.forEach(print)
+
+fruits.forEach((item,index,arr)=>{console.log(`${item},${index},${arr}`);
+})
