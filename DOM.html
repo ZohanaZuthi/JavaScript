@@ -2,10 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <title>DOM</title>
+    <link rel="stylesheet" href="styles/dom.css">
+    <style>
+        .big-black p {
+            color: brown;
+        }
+        #list{
+            color:aquamarine;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="big-black">
+        <h1 class="heading">DOM learning with chai aur code</h1>
+        <p>DOM stands for Document Object Model. It is a programming interface that represents the structure of a web page, allowing JavaScript to manipulate HTML and CSS dynamically.</p>
+    </div>
+    <h1 id="list">List of Foods</h1>
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Pasta</li>
+        <li>Sushi</li>
+        <li>Salad</li>
+        <li>Fried Rice</li>
+        <li>Steak</li>
+        <li>Tacos</li>
+        <li>Sandwich</li>
+        <li>Ice Cream</li>
+    </ul>
+    <script src="script/dom.js"></script>
+    <script>
+        console.log("first lecture on dom");
+        /* console.log(document.body); */
+        
+        const student = {
+            Name: 'Zuthi',
+            ID: 2103111,
+            study: function(time) {
+                console.log(this.Name, time, "Study korse");
+            }
+        };
+
+        const licollection = document.getElementsByTagName('li');
+        console.log(licollection);
+        for(const li of licollection)
+        {
+            conosle.log(li);
+        }
+
+        /* What does document.getElementsByTagName(tagName) do?
+           - It selects all elements with the specified tag name (e.g., div, p, h1, etc.).
+           - It returns an HTMLCollection, which is a live collection of all matching elements.
+           - Since it returns a collection (not a single element),
+             you need to access elements using indexing ([0], [1], etc.) or loop through them.
+        */
+    </script>
 </body>
 </html>
