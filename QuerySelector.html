@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles/dom.css">
+    <style>
+        .big-black p {
+            color: brown;
+        }
+        #list li{
+            color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-black">
+        <h1 class="heading">DOM learning with chai aur code</h1>
+        <p>DOM stands for Document Object Model. It is a programming interface that represents the structure of a web page, allowing JavaScript to manipulate HTML and CSS dynamically.</p>
+    </div>
+    <h1 id="list">List of Foods</h1>
+    <ul>
+        <li class="special">Pizza</li>
+        <li>Burger</li>
+        <li class="special">Pasta</li>
+        <li>Sushi</li>
+        <li class="special">Salad</li>
+        <li class="special">Fried Rice</li>
+        <li>Steak</li>
+        <li class="special">Tacos</li>
+        <li>Sandwich</li>
+        <li>Ice Cream</li>
+    </ul>
+    <script>
+        // to get the first element 
+        console.log(document.querySelector('#list li'));
+        //to get all elements under it 
+        const place=document.querySelectorAll('#list li');
+        console.log(place);
+        const anplace=document.querySelectorAll('.big-black');
+        console.log(anplace);
+        console.log(document.querySelectorAll('.special'));
+    </script>
+
+    </body>
+</html>

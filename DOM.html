@@ -20,14 +20,14 @@
     </div>
     <h1 id="list">List of Foods</h1>
     <ul>
-        <li>Pizza</li>
+        <li class="special">Pizza</li>
         <li>Burger</li>
-        <li>Pasta</li>
+        <li class="special">Pasta</li>
         <li>Sushi</li>
-        <li>Salad</li>
-        <li>Fried Rice</li>
+        <li class="special">Salad</li>
+        <li class="special">Fried Rice</li>
         <li>Steak</li>
-        <li>Tacos</li>
+        <li class="special">Tacos</li>
         <li>Sandwich</li>
         <li>Ice Cream</li>
     </ul>
@@ -52,6 +52,9 @@
         }
         console.log(document.getElementById('list'));
         console.log(document.getElementsByClassName('big-black'));
+        const place=document.getElementsByClassName('special');
+        for (const i of place)
+            console.log(i.innerText);
 
         /* What does document.getElementsByTagName(tagName) do?
            - It selects all elements with the specified tag name (e.g., div, p, h1, etc.).
