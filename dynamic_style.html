@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles/dom.css">
+
+</head>
+<body>
+    <div class="big-black">
+        <h1 class="heading">DOM learning with chai aur code</h1>
+        <p>DOM stands for Document Object Model. It is a programming interface that represents the structure of a web page, allowing JavaScript to manipulate HTML and CSS dynamically.</p>
+    </div>
+    <h1 id="list">List of Foods</h1>
+    <h1 id="food-title" class="main-heading" data-type="dessert">Chocolate Cake</h1>
+
+    <ul>
+        <li class="special" id="Yummy">Pizza</li>
+        <li>Burger</li>
+        <li class="special">Pasta</li>
+        <li>Sushi</li>
+        <li class="special">Salad</li>
+        <li class="special">Fried Rice</li>
+        <li>Steak</li>
+        <li class="special">Tacos</li>
+        <li>Sandwich</li>
+        <li>Ice Cream</li>
+    </ul>
+    <script>
+        //document.getElementById('list').style.color = 'red';
+        const title = document.getElementById('food-title');
+
+        console.log(title.getAttribute('id'));         // "food-title"
+        console.log(title.getAttribute('class'));      // "main-heading"
+        console.log(title.getAttribute('data-type'));  // "dessert"
+        console.log(title.classList)
+        title.classList.remove('main-heading')
+        console.log(title.classList)
+        title.classList.add('red-bg')
+        console.log(title.classList)
+        console.log(document.getElementsByClassName('special')[0].innerHTML);
+        const title2 = document.getElementsByClassName('special');
+        console.log(document.getElementsByClassName('big-black')[0].innerHTML);
+        console.log(document.getElementsByClassName('big-black')[0].innerText);
+
+
+
+    </script>
+    </body>
+</html>
