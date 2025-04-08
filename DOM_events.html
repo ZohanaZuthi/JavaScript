@@ -9,7 +9,22 @@
     <h1 onclick="console.log('I am 1')">Dom ar ajke special event</h1>
     <button onclick="console.log('I am 2')">Click Me</button>
     <button onclick="console.log('I am 3')">Click Me</button>
+    <button onclick="document.body.style.backgroundColor='yellow'" >Make Yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button id="make-blue">Make Blue</button>
     <script src="script/DOM_events.js"></script>
-    
+    <script>
+        const makeblue=document.getElementById('make-blue');
+        makeblue.onclick=makeBlue;
+        function makeBlue()
+        {
+            document.body.style.backgroundColor='blue';
+        }
+
+        function makeRed()
+        {
+            document.body.style.backgroundColor='red';
+        }
+    </script>
 </body>
 </html>
