@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS DOM Summary</title>
+    <title>Comment</title>
 </head>
 <body>
-    
+    <h1>Plz Add Your Comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat dicta temporibus dolores et eveniet cum saepe veniam, perferendis provident nam exercitationem libero assumenda, voluptates sed recusandae, possimus rerum iure!</p>
+        <p>Omnis, hic veritatis! Hic molestias obcaecati sint enim molestiae quasi, accusamus similique. Nemo, earum porro. Quas impedit odit repudiandae ducimus harum vitae saepe repellat ex, aut, exercitationem assumenda possimus esse?</p>
+        <p>Eius veniam fugit sint ex consequuntur libero harum asperiores magni animi facilis incidunt, consectetur quos cum praesentium dolore porro dicta, ratione excepturi eligendi officia nam voluptatem quasi, mollitia qui! Velit!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+    </div>
+    <script>
+        document.getElementById('btn-post').addEventListener('click',function(){
+            //console.log('Post is cliced');
+            //to get the comment inside the textbox
+
+            const commentbox=document.getElementById('new-comment')
+            const comment=commentbox.value;
+            console.log(comment)
+
+            //get the comment container
+            const commentcontainer=document.getElementById('comment-container')
+            const p=document.createElement('p')
+            p.innerText=comment;
+            commentcontainer.appendChild(p);
+            commentbox.value='';
+
+
+        })
+    </script>
     
 </body>
 </html>
