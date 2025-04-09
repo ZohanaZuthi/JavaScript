@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="list-container">
+        <ul>
+            <li class="item">item</li>
+            <li class="item">item</li>
+            <li class="item">item</li>
+            <li class="item">item</li>
+        </ul>
+        <button id="btn-add-item">Add Item</button>
+    </section>
+    <script>
+        const items = document.getElementsByClassName('item');
+        for (const item of items) {
+            item.addEventListener('click', function(event) {
+                event.target.parentNode.removeChild(event.target);
+            });
+        }
+
+        document.getElementById('btn-add-item').addEventListener('click', function() {
+            const list = document.querySelector('ul');
+            const li = document.createElement('li');
+            li.innerText = 'Add item';
+            li.classList.add('item');
+            li.addEventListener('click', function(event) {
+                event.target.parentNode.removeChild(event.target);
+            });
+            list.appendChild(li);
+        });
+    </script>
+</body>
+</html>
