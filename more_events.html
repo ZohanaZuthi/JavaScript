@@ -8,8 +8,21 @@
 <body>
     <h1>Explore More Events</h1>
     <button id="btn-more">Events</button>
+    <input id="text-field" type="text">
 </body>
 <script>
+    //document.getElementById('text-field').addEventListener('focus',function(){
+    //    console.log('Inside text Field');
+    //})
+    //document.getElementById('text-field').addEventListener('keydown',function(){
+    //    console.log('Inside text Field');
+    //})
+    document.getElementById('text-field').addEventListener('keyup',function(){
+        console.log(event.target.value);
+    })
+    document.getElementById('text-field').addEventListener('blur',function(){
+        console.log('Outside text Field');
+    })
     document.getElementById('btn-more').addEventListener('mousemove',function(){
         console.log('Event Triggered');
     })
